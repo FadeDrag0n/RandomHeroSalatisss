@@ -35,7 +35,6 @@ const heroes = [
   { name: "Муэрта", file: "muerta.png", attr: "Интеллект" },
   { name: "Гримстроук", file: "grimstroke.png", attr: "Интеллект" },
   { name: "Аппарат", file: "ancient_apparition.png", attr: "Интеллект" },
-  { name: "Рубик", file: "rubick.png", attr: "Интеллект" },
   { name: "Варлок", file: "warlock.png", attr: "Интеллект" },
   { name: "ЦМка", file: "crystal_maiden.png", attr: "Интеллект" },
   { name: "Дарк Виллоу", file: "dark_willow.png", attr: "Интеллект" },
@@ -226,6 +225,7 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
