@@ -29,14 +29,14 @@ const heroes = [
   // Первый ряд со скриншота
   { name: "Худвинк", file: "hoodwink.png", attr: "Универсал" },
   { name: "Мирана", file: "mirana.png", attr: "Универсал" },
-  { name: "Виндрейнджер", file: "windranger.png", attr: "Универсал" },
+  { name: "Вич Доктор", file: "witch_doctor.png", attr: "Универсал" },
   { name: "Венга", file: "vengeful_spirit.png", attr: "Ловкость" },
   { name: "Баунти хантер", file: "bounty_hunter.png", attr: "Ловкость" },
   { name: "Муэрта", file: "muerta.png", attr: "Интеллект" },
   { name: "Гримстроук", file: "grimstroke.png", attr: "Интеллект" },
   { name: "Аппарат", file: "ancient_apparition.png", attr: "Интеллект" },
   { name: "Рубик", file: "rubick.png", attr: "Интеллект" },
-  { name: "Инвокер", file: "invoker.png", attr: "Универсал" },
+  { name: "Варлок", file: "warlock.png", attr: "Интеллект" },
   { name: "ЦМка", file: "crystal_maiden.png", attr: "Интеллект" },
   { name: "Дарк Виллоу", file: "dark_willow.png", attr: "Интеллект" },
   { name: "Клокверк", file: "rattletrap.png", attr: "Универсал" },
@@ -82,6 +82,7 @@ const damage = [
   "Лион",
   "Лич",
   "Феникс",
+  "Вич Доктор",
 ];
 const control = [
   "Бейн",
@@ -225,6 +226,7 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
