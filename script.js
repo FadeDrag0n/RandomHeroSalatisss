@@ -26,22 +26,39 @@ function reroll() {
 /* ---------- ГЕРОИ ---------- */
 
 const heroes = [
-  { name: "Енчантрес", file: "enchantress.png", attr: "Интилект },
+  // Первый ряд со скриншота
+  { name: "Худвинк", file: "hoodwink.png", attr: "Универсал" },
+  { name: "Мирана", file: "mirana.png", attr: "Универсал" },
+  { name: "Виндрейнджер", file: "windranger.png", attr: "Универсал" },
+  { name: "Венга", file: "vengeful_spirit.png", attr: "Ловкость" },
+  { name: "Баунти хантер", file: "bounty_hunter.png", attr: "Ловкость" },
+  { name: "Муэрта", file: "muerta.png", attr: "Интеллект" },
+  { name: "Гримстроук", file: "grimstroke.png", attr: "Интеллект" },
+  { name: "Аппарат", file: "ancient_apparition.png", attr: "Интеллект" },
+  { name: "Рубик", file: "rubick.png", attr: "Интеллект" },
+  { name: "Инвокер", file: "invoker.png", attr: "Универсал" },
+  { name: "ЦМка", file: "crystal_maiden.png", attr: "Интеллект" },
+  { name: "Дарк Виллоу", file: "dark_willow.png", attr: "Интеллект" },
+  { name: "Клокверк", file: "rattletrap.png", attr: "Универсал" },
+  
+  
+  // Твои герои
+  { name: "Енчантрес", file: "enchantress.png", attr: "Интеллект" }, // Заметка: в актуальном патче она Интеллект
   { name: "Джакиро", file: "jakiro.png", attr: "Интеллект" },
   { name: "Скаймаг", file: "skywrath_mage.png", attr: "Интеллект" },
-  { name: "Снепфайр", file: "snapfire.png", attr: "Универсал" },
+  { name: "Снепфайр", file: "snapfire.png", attr: "Универсал" }, // Заметка: Снепфайр теперь Универсал
   { name: "Шадоушаман", file: "shadow_shaman.png", attr: "Интеллект" },
   { name: "Марси", file: "marci.png", attr: "Универсал" },
   { name: "Лион", file: "lion.png", attr: "Интеллект" },
   { name: "Лич", file: "lich.png", attr: "Интеллект" },
-  { name: "Виверна", file: "winter_wyvern.png", attr: "Интеллект" },
+  { name: "Виверна", file: "winter_wyvern.png", attr: "Универсал" }, // Виверна тоже Универсал
   { name: "Феникс", file: "phoenix.png", attr: "Универсал" },
-  { name: "Дазл", file: "dazzle.png", attr: "Интеллект" },
+  { name: "Дазл", file: "dazzle.png", attr: "Универсал" }, // Дазл стал Универсалом
   { name: "Оракл", file: "oracle.png", attr: "Интеллект" },
   { name: "Пугна", file: "pugna.png", attr: "Интеллект" },
   { name: "Трент", file: "treant.png", attr: "Сила" },
   { name: "Сайленсер", file: "silencer.png", attr: "Интеллект" },
-  { name: "Бейн", file: "bane.png", attr: "Интеллект" },
+  { name: "Бейн", file: "bane.png", attr: "Универсал" }, // Бейн теперь Универсал
   { name: "Дизраптор", file: "disruptor.png", attr: "Интеллект" },
   { name: "Висп", file: "wisp.png", attr: "Универсал" },
   { name: "Шадоудемон", file: "shadow_demon.png", attr: "Интеллект" },
@@ -208,5 +225,6 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
