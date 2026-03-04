@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1a1026, #2d1b45, #1c1033);
+    color: #eee;
+    text-align: center;
+}
+
+.container {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    height: 50px;
+    background: linear-gradient(90deg, #c084fc, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- РУЛЕТКА ---------- */
+
+.roulette-wrapper {
+    position: relative;
+    width: 1800px;      /* шире в 3 раза */
+    height: 240px;      /* выше в 2 раза */
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2a1b40, #1c1033);
+    box-shadow: 0 0 40px rgba(168,85,247,0.6);
+}
+
+.roulette {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: transform 4s cubic-bezier(.1,.7,.1,1);
+}
+
+.roulette img {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(168,85,247,0.5);
+    transition: transform 0.3s;
+}
+
+.roulette img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- УКАЗАТЕЛЬ ---------- */
+
+.pointer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(to bottom, #f0abfc, #a855f7);
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px #d8b4fe;
+    z-index: 10;
+}
+
+/* ---------- КНОПКИ ---------- */
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #7c3aed, #a855f7);
+    color: white;
+    box-shadow: 0 0 15px rgba(168,85,247,0.5);
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(192,132,252,0.8);
+}
+
+/* ---------- ФИЛЬТРЫ ---------- */
+
+.filters {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filters button {
+    background: #444;
+    color: #ddd;
+}
+
+.filters button.active {
+    background: linear-gradient(145deg, #a855f7, #c084fc);
+    color: white;
+    box-shadow: 0 0 20px #c084fc;
+}
+
+/* ---------- OVERLAY ---------- */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 5, 20, 0.85);
+    backdrop-filter: blur(8px);
+    display: none;              /* ← ВАЖНО */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal, .result-box {
+    background: linear-gradient(145deg, #2a1b40, #1c1033);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px #a855f7;
+    text-align: center;
+    max-width: 500px;
+}
+
+.modal h2 {
+    color: #c084fc;
+}
+
+.modal button {
+    margin-top: 20px;
+}
+
+.result-box h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #c084fc, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.result-box img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #a855f7;
+}
+
+.result-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}

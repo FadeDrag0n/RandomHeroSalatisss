@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dota Hero Roulette</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Стартовое уведомление -->
+  <div class="overlay" id="welcomeOverlay">
+    <div class="modal">
+      <h2>УПОМИНАНИЕ!!</h2>
+      <p>
+        Если вы зашли на этот сайт,<br />
+        и ваш никнейм <b>Салатиссс</b>,<br />
+        то... вы булочка и котик &lt;3
+      </p>
+      <button onclick="closeWelcome()">Понял</button>
+    </div>
+  </div>
+
+  <!-- Экран выпадения героя -->
+  <div class="overlay" id="resultOverlay">
+    <div class="result-box">
+      <h1 id="resultHeroName"></h1>
+      <img id="resultHeroImg" />
+      <div class="result-buttons">
+        <button onclick="closeResult()">Хорошо</button>
+        <button onclick="reroll()">
+          Ну и хуйня, рандомим еще раз(честный рандом)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <div class="container">
+      <h1 id="heroName">Нажми "Зарандомить"</h1>
+
+      <div class="roulette-wrapper">
+        <div class="pointer"></div>
+        <div class="roulette" id="roulette"></div>
+      </div>
+
+      <button id="spinBtn">Зарандомить</button>
+
+      <div class="filters">
+        <button data-filter="newHeroes">Попробовать что-то новое</button>
+        <button data-filter="favorites">Только любимые</button>
+        <button data-filter="damage">Много урона</button>
+        <button data-filter="control">Много контроля</button>
+        <button data-filter="save">Много сейва</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
