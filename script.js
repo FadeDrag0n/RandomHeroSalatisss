@@ -39,6 +39,7 @@ const heroes = [
   { name: "ЦМка", file: "crystal_maiden.png", attr: "Интеллект" },
   { name: "Дарк Виллоу", file: "dark_willow.png", attr: "Интеллект" },
   { name: "Клокверк", file: "rattletrap.png", attr: "Универсал" },
+  { name: "Рингмастер", file: "ringmaster.png", attr: "Интеллект" },
   
   
   // Твои герои
@@ -101,6 +102,7 @@ const save = [
   "Шадоудемон",
   "Виверна",
   "Висп",
+  "Рингмастер"
 ];
 
 /* ---------- ФИЛЬТРЫ ---------- */
@@ -225,6 +227,7 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
