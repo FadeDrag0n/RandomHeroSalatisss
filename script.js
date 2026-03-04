@@ -30,7 +30,7 @@ const heroes = [
   { name: "Худвинк", file: "hoodwink.png", attr: "Ловкость" },
   { name: "Мирана", file: "mirana.png", attr: "Универсал" },
   { name: "Вич Доктор", file: "witch_doctor.png", attr: "Универсал" },
-  { name: "Венга", file: "vengeful_spirit.png", attr: "Ловкость" },
+  { name: "Венга", file: "vengefulspirit.png", attr: "Ловкость" },
   { name: "Баунти хантер", file: "bounty_hunter.png", attr: "Ловкость" },
   { name: "Муэрта", file: "muerta.png", attr: "Интеллект" },
   { name: "Гримстроук", file: "grimstroke.png", attr: "Интеллект" },
@@ -227,6 +227,7 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
