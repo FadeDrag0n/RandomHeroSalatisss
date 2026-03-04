@@ -29,7 +29,7 @@ const heroes = [
   { name: "Енчантрес", file: "enchantress.png", attr: "Интилект },
   { name: "Джакиро", file: "jakiro.png", attr: "Интеллект" },
   { name: "Скаймаг", file: "skywrath_mage.png", attr: "Интеллект" },
-  { name: "Снепфайр", file: "snapfire.png", attr: "Ловкость" },
+  { name: "Снепфайр", file: "snapfire.png", attr: "Универсал" },
   { name: "Шадоушаман", file: "shadow_shaman.png", attr: "Интеллект" },
   { name: "Марси", file: "marci.png", attr: "Универсал" },
   { name: "Лион", file: "lion.png", attr: "Интеллект" },
@@ -208,4 +208,5 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
