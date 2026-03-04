@@ -27,7 +27,7 @@ function reroll() {
 
 const heroes = [
   // Первый ряд со скриншота
-  { name: "Худвинк", file: "hoodwink.png", attr: "Универсал" },
+  { name: "Худвинк", file: "hoodwink.png", attr: "Ловкость" },
   { name: "Мирана", file: "mirana.png", attr: "Универсал" },
   { name: "Вич Доктор", file: "witch_doctor.png", attr: "Универсал" },
   { name: "Венга", file: "vengeful_spirit.png", attr: "Ловкость" },
@@ -226,6 +226,7 @@ window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
