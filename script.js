@@ -176,11 +176,21 @@ function renderRoulette(pool) {
   return extended;
 }
 
+let isSpinning = false; // Флаг кручения
+
 spinBtn.addEventListener("click", () => {
+  if (isSpinning) {
+    alert("Подождите, рулетка уже крутится!");
+    return;
+  }
+
+  isSpinning = true; // ставим флаг, что рулетка крутится
+
   const pool = getPool();
 
   if (pool.length === 0) {
     heroName.innerText = "Нет героев под выбранные критерии!";
+    isSpinning = false; // снимаем флаг
     return;
   }
 
@@ -219,14 +229,27 @@ spinBtn.addEventListener("click", () => {
     resultHeroName.innerText = `${selectedHero.name} (${selectedHero.attr})`;
     resultHeroImg.src = "content/" + selectedHero.file;
     resultOverlay.style.display = "flex";
+
+    isSpinning = false; // снимаем флаг после окончания анимации
   }, 5000);
 });
+
+// Ререндер кнопки «Честный рандом» тоже нужно защитить
+function reroll() {
+  if (isSpinning) {
+    alert("Подождите, рулетка уже крутится!");
+    return;
+  }
+  resultOverlay.style.display = "none";
+  spinBtn.click();
+}
 
 // При загрузке страницы
 window.addEventListener("load", () => {
   welcomeOverlay.style.display = "flex"; // показываем только приветствие
   resultOverlay.style.display = "none"; // гарантированно скрываем результат
 });
+
 
 
 
